@@ -43,6 +43,9 @@ function addEmployee(){
     if(totalSalary > 0){
     $('#totalSalary').text(`Total Monthly Salary: ${totalMonthlySalary}`);
     }
+    if(totalSalary > 20000){
+        $('#totalSalary').css("color", "red");
+    }
     //reset values to blank
     $('#firstName').val("");
     $('#lastName').val("");

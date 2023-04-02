@@ -3,6 +3,7 @@
 html, body {
     min-height: 100vh;
     margin: auto;
+    background-image: linear-gradient(to bottom right, red, yellow);
   }
   body {
     display: flex;
@@ -14,7 +15,7 @@ html, body {
     margin: auto;
   }
 h1 {text-align: center;
-    background-color: rgb(222, 212, 232);}
+    /* background-color: rgb(222, 212, 232)*/;}
 h4{text-align: end;}
 
 table{width: 100%;}
@@ -32,12 +33,12 @@ table, th, td {
   }
 
   thead {
-    background: #7a7a7a;
-    color: #fcfcfc;
+    background: #982a06;
+    color: #fefefe;
   }
 
   tbody tr:nth-child(odd){ 
-    background: #fcfcfc;
+    background: #ebb5b5;
   }
   tbody tr:nth-child(even){
     background: #dcdcdc;
