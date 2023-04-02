@@ -7,11 +7,30 @@ function onReady(){
 //Add employees 
 function addEmployee(){
     event.preventDefault();
-    console.log('add employee');
+   
+    //set input values
     readFirstName = $('#firstName').val();
     readLastName = $('#lastName').val();
     readId = $('#id').val();
     readTitle = $('#title').val();
     readSalary = $('#salary').val();
+    
+    //add to table 
+    $('tbody').append(`
+    <td>${readFirstName}</td>
+    <td>${readLastName}</td>
+    <td>${readId}</td>
+    <td>${readTitle}</td>
+    <td>${readSalary}</td>
+    `);
+    
+    //reset values to blank
+    $('#firstName').val("");
+    $('#lastName').val("");
+    $('#id').val("");
+    $('#title').val("");
+    $('#salary').val("");
+    
+
 
 }
