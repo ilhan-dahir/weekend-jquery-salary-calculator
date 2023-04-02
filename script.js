@@ -17,6 +17,7 @@ function addEmployee(){
     
     //add to table 
     $('tbody').append(`
+    <tr id="table-row">
     <td>${readFirstName}</td>
     <td>${readLastName}</td>
     <td>${readId}</td>
@@ -31,6 +32,4 @@ function addEmployee(){
     $('#title').val("");
     $('#salary').val("");
     
-
-
 }
