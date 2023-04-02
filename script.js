@@ -7,7 +7,7 @@ function onReady(){
 //delete employee
 function deleteThis(){
     $(this).parent().parent().remove();
-    updateTotal();
+    //updateTotal();
 }
 
 let totalSalary = 0;
@@ -51,10 +51,10 @@ function addEmployee(){
     $('#salary').val("");
 }
 
-function updateTotal(){
-    console.log('in ut', totalSalary);
-    totalSalary -= Number($('#salary').val());
-    console.log('in ut', totalSalary);
+// function updateTotal(){
+//     console.log('in ut', totalSalary);
+//     totalSalary -= Number($('#salary').val());
+//     console.log('in ut', totalSalary);
 
 
-}
+// }
