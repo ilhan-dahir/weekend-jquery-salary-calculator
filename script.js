@@ -7,9 +7,11 @@ function onReady(){
 //delete employee
 function deleteThis(){
     $(this).parent().parent().remove();
+    updateTotal();
 }
 
 let totalSalary = 0;
+let totalMonthlySalary = 0;
 
 //Add employees 
 function addEmployee(){
@@ -35,14 +37,24 @@ function addEmployee(){
 
     //calculate total salary
     totalSalary += Number($('#salary').val());
-    console.log('ts', totalSalary);
-    $('#totalSalary').append(`${totalSalary}`);
-    
+    totalMonthlySalary = totalSalary / 12;
 
+    //if we have an imput for Salary, then display output
+    if(totalSalary > 0){
+    $('#totalSalary').text(`Total Monthly Salary: ${totalMonthlySalary}`);
+    }
     //reset values to blank
     $('#firstName').val("");
     $('#lastName').val("");
     $('#id').val("");
     $('#title').val("");
     $('#salary').val("");
+}
+
+function updateTotal(){
+    console.log('in ut', totalSalary);
+    totalSalary -= Number($('#salary').val());
+    console.log('in ut', totalSalary);
+
+
 }
