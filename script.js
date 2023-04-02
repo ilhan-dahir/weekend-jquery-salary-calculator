@@ -1,1 +1,5 @@
-console.log ('🥰');
+$(document).ready(onReady);
+
+function onReady(){
+    console.log(' 😩')
+}
